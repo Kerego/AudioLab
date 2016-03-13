@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioLab", "AudioLab\AudioLab.csproj", "{C273CA65-7EF5-4952-B14A-C2520EEAE070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioLab.Effects", "AudioLab.Effects\AudioLab.Effects.csproj", "{4E033C40-4392-4A7E-BFF2-E7DF189462EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|ARM.Build.0 = Debug|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x64.ActiveCfg = Debug|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x64.Build.0 = Debug|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x64.Deploy.0 = Debug|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x86.ActiveCfg = Debug|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x86.Build.0 = Debug|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Debug|x86.Deploy.0 = Debug|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|Any CPU.ActiveCfg = Release|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|ARM.ActiveCfg = Release|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|ARM.Build.0 = Release|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|ARM.Deploy.0 = Release|ARM
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x64.ActiveCfg = Release|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x64.Build.0 = Release|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x64.Deploy.0 = Release|x64
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x86.ActiveCfg = Release|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x86.Build.0 = Release|x86
+		{C273CA65-7EF5-4952-B14A-C2520EEAE070}.Release|x86.Deploy.0 = Release|x86
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|ARM.Build.0 = Debug|ARM
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|x64.ActiveCfg = Debug|x64
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|x64.Build.0 = Debug|x64
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|x86.ActiveCfg = Debug|x86
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Debug|x86.Build.0 = Debug|x86
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|ARM.ActiveCfg = Release|ARM
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|ARM.Build.0 = Release|ARM
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|x64.ActiveCfg = Release|x64
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|x64.Build.0 = Release|x64
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|x86.ActiveCfg = Release|x86
+		{4E033C40-4392-4A7E-BFF2-E7DF189462EA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
