@@ -135,7 +135,7 @@ namespace AudioLab
 			_properties["Balance"] = 0.0f;
 			_balanceEffectDefinition = new AudioEffectDefinition(typeof(AudioBalanceEffect).FullName, _properties);
 			_spectrumExtractor = new AudioEffectDefinition(typeof(AudioSpectrumExtractor).FullName, _properties);
-;
+
 			_echoEffectDefinition.Delay = 100;
 			_echoEffectDefinition.Feedback = 0.5;
 			_echoEffectDefinition.WetDryMix = 0;

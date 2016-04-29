@@ -18,7 +18,7 @@ namespace AudioLab.Effects
 		private List<AudioEncodingProperties> supportedEncodingProperties;
 
 		private IPropertySet propertySet;
-		public bool UseInputFrameForOutput { get { return true; } }
+		public bool UseInputFrameForOutput { get { return false; } }
 		public bool TimeIndependent { get { return false; } }
 		public bool IsReadyOnly { get { return true; } }
 
