@@ -27,8 +27,8 @@ namespace AudioLab
 	{
 
 		private float _part = 0;
-		private float[] _current = new float[224];
-		private float[] _prev = new float[224];
+		private float[] _current = null;
+		private float[] _prev = null;
 		private float _angle = 0;
 		private float _step = 3.14f / 112;
 		float[] _spectrum;
@@ -56,7 +56,6 @@ namespace AudioLab
 			await CreateAudioGraph();
 			_graph.Start();
 			AddCustomEffect();
-			_spectrum = _properties["chart"] as float[];
 
 			DispatcherTimer timer = new DispatcherTimer();
 			timer.Interval = TimeSpan.FromSeconds(1);
@@ -172,20 +171,31 @@ namespace AudioLab
 		}
 		private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
 		{
-			if (!_properties.ContainsKey("chart"))
+            if (!_properties.ContainsKey("chart"))
 				return;
-			_part += 0.1f;
+
+            if (_spectrum == null) {
+                _spectrum = _properties["chart"] as float[];
+                if (_spectrum == null)
+                    return;
+                _current = new float[_spectrum.Length / 4];
+                _prev = new float[_spectrum.Length / 4];
+            }
+            _part += 0.1f;
+
+            var length = _spectrum.Length / 4;
+
 			if (_part > 1)
 			{
 				_prev = _current;
-				_current = new float[224];
-				for (int i = 0; i < 224; i++)
+				_current = new float[length];
+				for (int i = 0; i < length; i++)
 					_current[i] = _spectrum.Skip(i * 4).Take(4).Average() * 200;
 				_part = 0.1f;
 			}
 
 			_angle = 0;
-			for (int i = 0; i < 224; i++)
+			for (int i = 0; i < length; i++)
 			{
 				var lerp = Lerp(_prev[i], _current[i], _part);
 				var abs = Math.Abs(lerp);

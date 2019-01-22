@@ -48,7 +48,9 @@ namespace AudioLab.Effects
 			currentEncodingProperties = encodingProperties;
 			propertySet["chart"] = _chart;
 		}
-		float[] _chart = new float[896];
+
+		float[] _chart = null;
+
 		unsafe public void ProcessFrame(ProcessAudioFrameContext context)
 		{
 			AudioFrame inputFrame = context.InputFrame;
@@ -68,6 +70,12 @@ namespace AudioLab.Effects
 
 				// Process audio data
 				int dataInFloatLength = (int)inputBuffer.Length / sizeof(float);
+
+                if(_chart == null)
+                {
+                    _chart = new float[dataInFloatLength];
+                    propertySet["chart"] = _chart;
+                }
 				for (int i = 0; i < dataInFloatLength; i += 2)
 				{
 					inputDataL = inputDataInFloat[i];
